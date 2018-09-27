@@ -1,16 +1,7 @@
-let states = window.localStorage.getItem('states') || '{"data": []}';
-states = JSON.parse(data.states);
-
-function getData () {
-  
-
-  window.localStorage; setItem('states', JSON.stringify(sates));
-}
+document.getElementById('app').innerHTML = '<h1>HELLO</h1>';
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-  .register('./service-worker.js')
-  .then(function (reg) {
-    
-  });
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  })
 }
